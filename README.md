@@ -1,6 +1,6 @@
 ## PM2.5本科玩乐小项目
 
-远古技术栈axios，主打一个echarts实践
+远古nodejs的项目，主打一个echarts实践，base on [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)和[element-ui](https://github.com/ElemeFE/element)，非常感谢大佬[@PanJiaChen](https://github.com/PanJiaChen)的优秀项目
 
 ![](./image/20240922140608.png)
 
