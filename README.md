@@ -1,217 +1,129 @@
-<p align="center">
-  <img width="320" src="https://wpimg.wallstcn.com/ecc53a42-d79b-42e2-8852-5126b810a4c8.svg">
-</p>
+## PM2.5本科玩乐小项目
 
-<p align="center">
-  <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/vue-2.6.10-brightgreen.svg" alt="vue">
-  </a>
-  <a href="https://github.com/ElemeFE/element">
-    <img src="https://img.shields.io/badge/element--ui-2.7.0-brightgreen.svg" alt="element-ui">
-  </a>
-  <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
-    <img src="https://travis-ci.org/PanJiaChen/vue-element-admin.svg?branch=master" alt="Build Status">
-  </a>
-  <a href="https://github.com/PanJiaChen/vue-element-admin/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
-  </a>
-  <a href="https://github.com/PanJiaChen/vue-element-admin/releases">
-    <img src="https://img.shields.io/github/release/PanJiaChen/vue-element-admin.svg" alt="GitHub release">
-  </a>
-  <a href="https://gitter.im/vue-element-admin/discuss">
-    <img src="https://badges.gitter.im/Join%20Chat.svg" alt="gitter">
-  </a>
-  <a href="https://panjiachen.github.io/vue-element-admin-site/donate">
-    <img src="https://img.shields.io/badge/%24-donate-ff69b4.svg" alt="donate">
-  </a>
-</p>
+远古技术栈axios，主打一个echarts实践
 
-English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Spanish](./README.es.md)
+![](./image/20240922140608.png)
 
-## Introduction
+![](./image/20240922140648.png)
 
-[vue-element-admin](https://panjiachen.github.io/vue-element-admin) is a production-ready front-end solution for admin interfaces. It is based on [vue](https://github.com/vuejs/vue) and uses the UI Toolkit [element-ui](https://github.com/ElemeFE/element).
+## 配置环节
 
-[vue-element-admin](https://panjiachen.github.io/vue-element-admin) is based on the newest development stack of vue and it has a built-in i18n solution, typical templates for enterprise applications, and lots of awesome features. It helps you build large and complex Single-Page Applications. I believe whatever your needs are, this project will help you.
+需要注意的版本：
 
-- [Preview](https://panjiachen.github.io/vue-element-admin)
+**nodejs**: v14.10.1
+**npm**: v6.14.8
+**node-sass**: 4.14.1
 
-- [Documentation](https://panjiachen.github.io/vue-element-admin-site/)
+### 安装
 
-- [Gitter](https://gitter.im/vue-element-admin/discuss)
-
-- [Donate](https://panjiachen.github.io/vue-element-admin-site/donate/)
-
-- [Wiki](https://github.com/PanJiaChen/vue-element-admin/wiki)
-
-- [Gitee](https://panjiachen.gitee.io/vue-element-admin/) 国内用户可访问该地址在线预览
-
-- Base template recommends using: [vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)
-- Desktop: [electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
-- Typescript: [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
-- [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
-
-**After the `v4.1.0+` version, the default master branch will not support i18n. Please use [i18n Branch](https://github.com/PanJiaChen/vue-element-admin/tree/i18n), it will keep up with the master update**
-
-**The current version is `v4.0+` build on `vue-cli`. If you find a problem, please put [issue](https://github.com/PanJiaChen/vue-element-admin/issues/new). If you want to use the old version , you can switch branch to [tag/3.11.0](https://github.com/PanJiaChen/vue-element-admin/tree/tag/3.11.0), it does not rely on `vue-cli`**
-
-**This project does not support low version browsers (e.g. IE). Please add polyfill by yourself.**
-
-## Preparation
-
-You need to install [node](https://nodejs.org/) and [git](https://git-scm.com/) locally. The project is based on [ES2015+](https://es6.ruanyifeng.com/), [vue](https://cn.vuejs.org/index.html), [vuex](https://vuex.vuejs.org/zh-cn/), [vue-router](https://router.vuejs.org/zh-cn/), [vue-cli](https://github.com/vuejs/vue-cli) , [axios](https://github.com/axios/axios) and [element-ui](https://github.com/ElemeFE/element), all request data is simulated using [Mock.js](https://github.com/nuysoft/Mock).
-Understanding and learning this knowledge in advance will greatly help the use of this project.
-
- <p align="center">
-  <img width="900" src="https://wpimg.wallstcn.com/a5894c1b-f6af-456e-82df-1151da0839bf.png">
-</p>
-
-## Sponsors
-
-Become a sponsor and get your logo on our README on GitHub with a link to your site. [[Become a sponsor]](https://www.patreon.com/panjiachen)
-
-<a href="https://flatlogic.com/admin-dashboards?from=vue-element-admin"><img width="150px" src="https://wpimg.wallstcn.com/9c0b719b-5551-4c1e-b776-63994632d94a.png" /></a><p>Admin Dashboard Templates made with Vue, React and Angular.</p>
-
-## Features
+可以换一个proxy，或者换一个镜像，会快一点，npm会根据package.json制作package-lock.json
 
 ```
-- Login / Logout
-
-- Permission Authentication
-  - Page permission
-  - Directive permission
-  - Permission configuration page
-  - Two-step login
-
-- Multi-environment build
-  - dev sit stage prod
-
-- Global Features
-  - I18n
-  - Multiple dynamic themes
-  - Dynamic sidebar (supports multi-level routing)
-  - Dynamic breadcrumb
-  - Tags-view (Tab page Support right-click operation)
-  - Svg Sprite
-  - Mock data
-  - Screenfull
-  - Responsive Sidebar
-
-- Editor
-  - Rich Text Editor
-  - Markdown Editor
-  - JSON Editor
-
-- Excel
-  - Export Excel
-  - Upload Excel
-  - Visualization Excel
-  - Export zip
-
-- Table
-  - Dynamic Table
-  - Drag And Drop Table
-  - Inline Edit Table
-
-- Error Page
-  - 401
-  - 404
-
-- Components
-  - Avatar Upload
-  - Back To Top
-  - Drag Dialog
-  - Drag Select
-  - Drag Kanban
-  - Drag List
-  - SplitPane
-  - Dropzone
-  - Sticky
-  - CountTo
-
-- Advanced Example
-- Error Log
-- Dashboard
-- Guide Page
-- ECharts
-- Clipboard
-- Markdown to html
-```
-
-## Getting started
-
-```bash
-# clone the project
-git clone https://github.com/PanJiaChen/vue-element-admin.git
-
-# enter the project directory
-cd vue-element-admin
-
-# install dependency
 npm install
+```
 
-# develop
+Windows操作系统的注册文件放在 **"C:\Users\Leon\\.npmrc"**
+
+```
+registry=https://registry.npmjs.org/
+proxy=http://127.0.0.1:7890/
+https—proxy=http://127.0.0.1:7890
+```
+
+实在不行用yarn，先安装yarn，然后install，yarn会根据package.json制作yarn.lock
+
+
+```
+npm install -g yarn@1.22.15
+yarn install
+```
+
+yarn的配置文件同样在Windows操作系统的 **"C:\Users\Leon\\.yarnrc"**，也可以加一下代理还有换源，虽然都不一定管用
+
+```
+# THIS IS AN AUTOGENERATED FILE. DO NOT EDIT THIS FILE DIRECTLY.
+# yarn lockfile v1
+
+
+registry "https://registry.npm.taobao.org"
+#registry "https://registry.yarnpkg.com"
+https-proxy "http://127.0.0.1:7890"
+lastUpdateCheck 1726926991136
+network-timeout "60000"
+proxy "http://127.0.0.1:7890"
+
+```
+
+npm或者yarn换代理、换源、查看源、取消设置的命令，如果你想取消设置，可以去上面的注册文件里面删掉对应行，或者运行命令
+
+```
+# npm设置
+npm config set proxy http://127.0.0.1:7890
+npm config set https-proxy http://127.0.0.1:7890
+npm config set registry https://registry.npmjs.org
+# npm查看
+npm config get proxy
+npm config get https-proxy
+npm config get registry
+# npm删除
+npm config delete proxy
+npm config delete https-proxy
+npm config delete registry
+
+# yarn设置
+yarn config set proxy http://127.0.0.1:7890
+yarn config set https-proxy http://127.0.0.1:7890
+yarn config set registry https://registry.yarnpkg.com
+# yarn查看
+yarn config get proxy
+yarn config get https-proxy
+yarn config get registry
+# yarn删除
+yarn config delete proxy
+yarn config delete https-proxy
+yarn config delete registry
+```
+
+### 构建运行
+
+package.json的dev命令改了一下最大内存限制，要不然构建的时候会报错
+
+```
 npm run dev
 ```
 
-This will automatically open http://localhost:9527
 
-## Build
+## Problem
 
-```bash
-# build for test environment
-npm run build:stage
+有可能会遇到一个与 OpenSSL 版本不兼容的问题，通常发生在 Node.js 17 及更高版本中，因为它们默认启用了 OpenSSL 3.0，其中某些算法在 Webpack 或依赖项中不再受支持。
 
-# build for production environment
-npm run build:prod
+```
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:69:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (D:\Code\PMAI\node_modules\webpack\lib\util\createHash.js:90:53)
+    at NormalModule._initBuildHash (D:\Code\PMAI\node_modules\webpack\lib\NormalModule.js:401:16)
+    at handleParseError (D:\Code\PMAI\node_modules\webpack\lib\NormalModule.js:449:10)
+    at D:\Code\PMAI\node_modules\webpack\lib\NormalModule.js:481:5
+    at D:\Code\PMAI\node_modules\webpack\lib\NormalModule.js:342:12
+    at D:\Code\PMAI\node_modules\loader-runner\lib\LoaderRunner.js:373:3
+    at iterateNormalLoaders (D:\Code\PMAI\node_modules\loader-runner\lib\LoaderRunner.js:214:10)
+    at Array.<anonymous> (D:\Code\PMAI\node_modules\loader-runner\lib\LoaderRunner.js:205:4)
+    at Storage.finished (D:\Code\PMAI\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:55:16)
+    at D:\Code\PMAI\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:91:9
+    at D:\Code\PMAI\node_modules\graceful-fs\graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3) {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
 ```
 
-## Advanced
+解决方法之一是将 Node.js 降级到 16.x 或 14.x 版本(我的选择)。如果你不想降级，可以通过以下几种方式临时修复这个问题：
 
-```bash
-# preview the release environment effect
-npm run preview
-
-# preview the release environment effect + static resource analysis
-npm run preview -- --report
-
-# code format check
-npm run lint
-
-# code format check and auto fix
-npm run lint -- --fix
+```
+set NODE_OPTIONS=--openssl-legacy-provider
 ```
 
-Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
-
-## Changelog
-
-Detailed changes for each release are documented in the [release notes](https://github.com/PanJiaChen/vue-element-admin/releases).
-
-## Online Demo
-
-[Preview](https://panjiachen.github.io/vue-element-admin)
-
-## Donate
-
-If you find this project useful, you can buy author a glass of juice :tropical_drink:
-
-![donate](https://wpimg.wallstcn.com/bd273f0d-83a0-4ef2-92e1-9ac8ed3746b9.png)
-
-[Paypal Me](https://www.paypal.me/panfree23)
-
-[Buy me a coffee](https://www.buymeacoffee.com/Pan)
-
-## Browsers support
-
-Modern browsers and Internet Explorer 10+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
-
-## License
-
-[MIT](https://github.com/PanJiaChen/vue-element-admin/blob/master/LICENSE)
-
-Copyright (c) 2017-present PanJiaChen
+其他的问题就是无穷无尽的版本问题，项目究极老旧，vue2.6的古董技术，参考意义仅在于关于echarts的实践和使用
